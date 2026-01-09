@@ -3,6 +3,7 @@ let h1 = document.getElementById("h1");
 let h3 = document.getElementById("h3");
 function clickme(){
     let input = document.getElementById("input").value;
+    input.lowerCase();
     let splitWord = input.split("");
     let reverseWord = splitWord.reverse();
     let join = reverseWord.join("");
@@ -18,3 +19,4 @@ function clickme(){
     }
     document.getElementById("input").value = "";
 }
+
